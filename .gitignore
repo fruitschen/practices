@@ -1,5 +1,6 @@
 .project
 .pydevproject
+practices/practices/settings_local.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
