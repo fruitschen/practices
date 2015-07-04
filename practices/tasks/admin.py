@@ -8,6 +8,8 @@ class TaskPointInline(admin.TabularInline):
 
 class TaskAdmin(admin.ModelAdmin):
     inlines = [TaskPointInline]
+    list_display = ['priority', 'name', 'finished', ]
+    list_filter = ['priority', 'taskpoint__category', 'finished', ]
 
 admin.site.register(Category)
 admin.site.register(Task, TaskAdmin)
